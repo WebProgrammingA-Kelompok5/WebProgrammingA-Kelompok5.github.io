@@ -85,12 +85,34 @@
                     </div>
                 </form>
                 <div class="navbar-nav ml-auto action-buttons">
+                    <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+                        <div class="nav-item dropdown">
+                            <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle mr-4">
+                                <i data-feather="meh"></i>
+                                User
+                            </a>
+                            <div class="dropdown-menu">					
+                                <a class="dropdown-item" href="New-Recipe.html">
+                                    <i data-feather=""></i>
+                                  Resep Baru 
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i data-feather="Bookmark"></i>
+                                  Bookmark
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i data-feather="file-text"></i>
+                                   Your Comment/Review
+                                </a>
+                            </div>
+                        </div>
                     <div>
                         <a href="login.html" data-toggle="click" class="nav-link dropdown-toggle mr-4">Login</a>
                     </div>
                     <div>
                         <a href="register.html" data-toggle="click" class="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
                     </div>
+                </div>
                 </div>
             </div>
         </nav>
@@ -146,6 +168,10 @@
 	        padding: 50px;
             }
         </style>
-        
+<!-- Feather icons -->
+<script src="https://unpkg.com/feather-icons"></script>
+<script>
+  feather.replace();
+</script>
     </body>
 </html>
