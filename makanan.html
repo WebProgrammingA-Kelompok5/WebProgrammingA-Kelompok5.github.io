@@ -1,10 +1,10 @@
-﻿
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Resep</title>
+<title>Makanan</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -24,7 +24,7 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 </head> 
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="main-menu.html">
         <i data-feather="book-open"></i>
         Resep Makanan
       </a>  		
@@ -34,7 +34,7 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 	<!-- Collection of nav links, forms, and other content for toggling -->
 	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
 		<div class="navbar-nav">
-			<a href="#" class="nav-item nav-link">
+			<a href="main-menu.html" class="nav-item nav-link">
                 <i data-feather="home"></i>
                 Home
             </a>		
@@ -55,6 +55,26 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
                     <a class="dropdown-item" href="#">
                         <img src="img/bread.png" width="20" height="20">
                       Roti
+                    </a>
+                </div>
+            </div>
+            <div class="nav-item dropdown">
+                <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">
+                    <i data-feather="filter"></i>
+                    Category
+                </a>
+                <div class="dropdown-menu">					
+                    <a class="dropdown-item" href="makanan.html">
+                        <img src="img/Fish.png" width="30" height="30">
+                      Ikan
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="img/Meat.png" width="30" height="30">
+                      Daging
+                    </a>
+                    <a class="dropdown-item" href="#">
+                        <img src="img/noodle.png" width="30" height="30">
+                      Mie
                     </a>
                 </div>
             </div>
@@ -161,39 +181,34 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 							  <span class="carousel-control-next-icon" aria-hidden="true"></span>
 							  <span class="sr-only">Next</span>
 							</a>
-						  </div>
-					<div class="art-content-layout">
+                          </div>
+                    <div class="art-content-layout">
 						<div class="art-content-layout-row">
 						<div class="art-layout-cell layout-item-0" style="width: 50%; padding-right:380px" >
-							<h1><font color="blue">Resep Terbaru</font></h1>
+							<h1><font color="blue">Seafood</font></h1>
 						</div>
-						<div class="art-layout-cell layout-item-0" style="width: 50%" >
-							<h1><font color="red">Menu Populer</font></h1>
-						</div>
-						</div>
-						
 					</div>
 					<div class="art-content-layout-wrapper layout-item-1">
 					<div class="art-content-layout layout-item-2">
 						<div class="art-content-layout-row">
-							<div class="art-layout-cell layout-item-5" style="width: 40%" >
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Salmon Teriyaki</font></h1>
 								<p><img width="310" height="210" src="img/a.jpg" alt="" class=""></p>
 								<p>Salmon dimasak dengan kecap teriyaki yang nikmat. Cocok disajikan pada malam hari.&nbsp;</p>
 								<p><a href="food1.html">Read more...</a></p>
 							</div>
-							<div class="art-layout-cell layout-item-5" style="width: 40%" >
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Salmon Seeded Mustard</font></h1>
 								<p><img width="310" height="210" src="img/b.jpg" alt="" class=""></p>
 								<p>Salmon seeded mustard cocok sekali untuk dinner. Rasanya nikmat dan lezat.&nbsp;</p>
 								<p><a href="food2.html">Read more...</a></p>
 							</div>
-							<div class="art-layout-cell layout-item-0" style="width: 30%; padding-left:10px;background:rgb(239, 239, 239);" >
-								<p><img width="97" height="97" alt="" src="img/e.jpg" style="padding-right:20px;float:left;"></p>
-								Thai food noodle fried noodles mea bercampur dengan toge, tahu dan daging sapi.<br clear="all">
-								<p><img width="97" height="97" alt="" src="img/f.jpg" style="padding-right:20px;float:left;"></p>
-								Kue terbuat dari campuran strawberry cocok untuk dessert.<br clear="all">
-								<p><img width="97" height="97" alt="" src="img/g.jpg" style="padding-right:20px;float:left;"></p>
-								Food spanish baked eggs bercampur dengan irisan sosis goreng yang nikmat.
-							</div>		
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Sushi Tuna</font></h1>
+                                <p><img width="310" height="210" src="img/Tuna.jpg" alt="" class=""</p>
+                                <p>Sushi dengan isi ikan tuna.&nbsp;</p>
+                                <p><a href="Tuna.html">Read more...</a></p>
+                            </div>
 						</div>
 					</div>
 					</div>
@@ -202,54 +217,61 @@ $(document).on("click", ".action-buttons .dropdown-menu", function(e){
 					<div class="art-content-layout">
 						<div class="art-content-layout-row">
 						<div class="art-layout-cell layout-item-0" style="width: 50%; padding-right:380px" >
-							<h1><font color="blue">Menu Hari Ini</font></h1>
-						</div>
-						<div class="art-layout-cell layout-item-0" style="width: 50%" >
-							<h1><font color="dark Yellow">Highlights</font></h1>
-						</div>
+							<h1><font color="blue">Meat</font></h1>
 						</div>
 					</div>
 					<div class="art-content-layout-wrapper layout-item-1">
 					<div class="art-content-layout layout-item-2">
 						<div class="art-content-layout-row">
-							<div class="art-layout-cell layout-item-5" style="width: 40%" >
-								<p><img width="310" height="210" src="img/c.jpg" alt="" class=""></p>
-								<p>Pizza roll baked mini dibuat dengan bumbu-bumbu pizza yang sering dibuat direstoran.&nbsp;</p>
-								<p><a href="food3.html">Read more...</a></p>
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Steak</font></h1>
+								<p><img width="310" height="210" src="img/Beef.jpg" alt="" class=""></p>
+								<p>Steak yang dipadukan dengan saus pilihan dan salad.&nbsp;</p>
+								<p><a href="steak.html">Read more...</a></p>
 							</div>
-							<div class="art-layout-cell layout-item-5" style="width: 40%" >
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Chicken Cordon Blue</font></h1>
+								<p><img width="310" height="210" src="img/chicken.jpg" alt="" class=""></p>
+								<p>Fillet dada ayam yang diisi lembaran ham dan keju mozzarella.&nbsp;</p>
+								<p><a href="chicken.html">Read more...</a></p>
+                            </div>
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Beef Stew</font></h1>
+                                <p><img width="310" height="210" src="img/Stew.jpg" alt="" class=""></p>
+                                <p>Rebusan yang berisi campuran daging dan sayuran.&nbsp;</p>
+                                <p><a href="stew.html">Read more...</a></p>
+                            </div>
+					</div>
+					</div>
+                    </div>
+                    <div class="art-postcontent art-postcontent-0 clearfix">
+					<div class="art-content-layout">
+						<div class="art-content-layout-row">
+						<div class="art-layout-cell layout-item-0" style="width: 50%; padding-right:380px" >
+							<h1><font color="blue">Noodle</font></h1>
+						</div>
+                    </div>
+                    <div class="art-content-layout-wrapper layout-item-1">
+					<div class="art-content-layout layout-item-2">
+						<div class="art-content-layout-row">
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Ramen</font></h1>
 								<p><img width="310" height="210" src="img/ramen.jpg" alt="" class=""></p>
 								<p>Mie ala Jepang dengan rasa gurih berpadu dengan daun bawang yang nikmat.&nbsp;</p>
-								<p><a href="food4.html">Read more...</a></p>
+								<p><a href="ramen.html">Read more...</a></p>
 							</div>
-						<div class="art-layout-cell layout-item-6" style="width: 30%" >
-							<div class="newsdate">
-							<p style="padding: 0; margin: -10px 0 -10px; font-size: 36px">20</p>
-							<p>Jan</p>
-							</div>
-							<p style="padding-right: 20px"><span style="font-weight: bold;">Sup daging lobak</span><br>
-							Santap siang atau malam terasa kurang lengkap bila tidak ada sup.</p>
-							<br clear="all">
-							<div class="newsdate">
-							<p style="padding: 0; margin: -10px 0 -10px; font-size: 36px">12</p>
-							<p>Feb</p>
-							</div>
-							<p style="padding-right: 20px"><span style="font-weight: bold;">Bandeng presto bumbu cabai</span><br>
-							Hidangan yang satu ini tak bisa diragukan lagi kelezatan dan kenikmatanya.</p>
-							<br clear="all">
-							<div class="newsdate">
-							<p style="padding: 0; margin: -10px 0 -10px; font-size: 36px">04</p>
-							<p>Ags</p>
-							</div>
-							<p style="padding-right: 20px"><span style="font-weight: bold;">Udang masak kolio</span><br>
-							Mari Kita buat udang masak lokio yang cocok disantap pada siang hari dan malam hari.<br>
-							<br></p>
-							<p><a href="#" class="art-button">See more</a></p>
-						</div>
-						</div>
-					</div>
-					</div>
-					</div>	
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Jajangmyeon</font></h1>
+								<p><img width="310" height="210" src="img/Jajang.jpg" alt="" class=""></p>
+								<p>Mie ala Korea dengan saus kacang kedelai hitam yang manis.&nbsp;</p>
+								<p><a href="jajang.html">Read more...</a></p>
+                            </div>
+                            <div class="art-layout-cell layout-item-5" style="width: 40%" >
+                                <h1><font color="black">Chou Mein</font></h1>
+                                <p><img width="310" height="210" src="img/mie.jpg" alt="" class=""></p>
+                                <p>Mie ala China yang digoreng kering lalu diberi campuran udang, ayam, dan sayur.&nbsp;</p>
+                                <p><a href="mie.html">Read more...</a></p>
+                            </div>
 			</article>
 			</div>
 			</div>
