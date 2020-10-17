@@ -1,6 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <script type="text/javascript" id="abc">
+        function kirim() {
+         var a=document.getElementById("abc").innerHTML;
+         var b=document.getElementById("teks").value;
+         var c=document.getElementById("kepala").value;
+         document.write(a + "<br />" + "<br />");
+         document.write(b + "<br />");
+         document.write(c);
+      }
+    </script>
  <style>
      h1 {
         color: black;
@@ -143,7 +153,17 @@
                 Selamat mencoba resep masakan di atas!
             </p>
 
-
+            <hr style="border: 1px dashed black;"></hr>
+            <hr></hr>
+            Nama Anda :</br>
+            <input type=text name="text" id="teks" size="35"><br /><br> 
+            Komentar :</br>
+            <textarea rows="12" name="b" id="kepala" cols="35" wrap="virtual"></textarea><br /><br>
+            <input type="button" onclick="kirim()" value="Komentar" />
+            <input name="Clear" type="reset" value="Batal" />
+            </form><br />
+            <hr style="border: 1px dashed black;"></hr>
+            <hr></hr>
 
         </div>
 
