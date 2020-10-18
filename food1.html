@@ -1,16 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript" id="abc">
-        function kirim() {
-         var a=document.getElementById("abc").innerHTML;
-         var b=document.getElementById("teks").value;
-         var c=document.getElementById("kepala").value;
-         document.write(a + "<br />" + "<br />");
-         document.write(b + "<br />");
-         document.write(c);
-      }
-    </script>
  <style>
      h1 {
         color: black;
@@ -100,10 +90,6 @@
                             <i data-feather="Bookmark"></i>
                           Bookmark
                         </a>
-                        <a class="dropdown-item" href="#">
-                            <i data-feather="book-open"></i>
-                           Your Comment/Review
-                        </a>
                     </div>
                 </div>
                 <div>
@@ -152,9 +138,22 @@
                 Mudah sekali, kan? Untuk melengkapi gizi seimbang, ada baiknya kamu juga membuat sayur seperti brokoli atau tumisan lainnya.</br>
                 Selamat mencoba resep masakan di atas!
             </p>
-
+            <html id="abc" name="name1">
+            <head id="abc" name="name2">
+            <script type="text/javascript" id="abc">
+                function kirim() {
+                    var a=document.getElementById("abc").innerHTML;
+                    var b=document.getElementById("teks").value;
+                    var c=document.getElementById("kepala").value;
+                    document.write(a + "<br />" + "<br />");
+                    document.write(b + "<br />");
+                    document.write(c);
+                }
+            </script>
+            </head>
             <hr style="border: 1px dashed black;"></hr>
             <hr></hr>
+            <h1>Komentar</h1><br /><br>
             Nama Anda :</br>
             <input type=text name="text" id="teks" size="35"><br /><br> 
             Komentar :</br>
