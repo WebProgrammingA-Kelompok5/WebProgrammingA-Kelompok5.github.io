@@ -2247,3 +2247,11 @@ border-radius: 5px;
 	padding: 70px;
 	width: 1550px;
 }
+
+.margin-for-deskripsi {
+	color: black;
+	padding: 350px;
+	width: 350px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
