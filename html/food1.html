@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+ <style>
+     h1 {
+        color: black;
+        }
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Resep</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Varela+Round">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <script>
+        // Prevent dropdown menu from closing when click inside the form
+        $(document).on("click", ".action-buttons .dropdown-menu", function (e) {
+            e.stopPropagation();
+        });
+    </script>
+
+    <link rel="stylesheet" href="main-menu.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="main-menu.html">
+            <i data-feather="book-open"></i>
+            Resep Makanan
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collection of nav links, forms, and other content for toggling -->
+        <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+            <div class="navbar-nav">
+                <a href="main-menu.html" class="nav-item nav-link">
+                    <i data-feather="home"></i>
+                    Home
+                </a>
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle">
+                        <i data-feather="list"></i>
+                        Type
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="makanan.html">
+                            <img src="img/fork-and-spoon.png" width="20" height="20">
+                            Makanan
+                        </a>
+                        <a class="dropdown-item" href="minuman.html">
+                            <i data-feather="coffee"></i>
+                            Minuman
+                        </a>
+                        <a class="dropdown-item" href="roti.html">
+                            <img src="img/bread.png" width="20" height="20">
+                            Roti
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <form class="navbar-form form-inline">
+                <div class="input-group search-box">
+                    <input type="text" id="search" class="form-control" placeholder="Search here...">
+                    <div class="input-group-append">
+                        <span class="input-group-text">
+                            <i class="material-icons">&#xE8B6;</i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="navbar-nav ml-auto action-buttons">
+                <div class="nav-item dropdown">
+                    <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle mr-4">
+                        <i data-feather="meh"></i>
+                        User
+                    </a>
+                    <div class="dropdown-menu">					
+                        <a class="dropdown-item" href="New-Recipe.html">
+                            <i data-feather=""></i>
+                          Resep Baru 
+                        </a>
+                        <a class="dropdown-item" href="Bookmark.html">
+                            <i data-feather="Bookmark"></i>
+                          Bookmark
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <a href="login.html" data-toggle="click" class="nav-link dropdown-toggle mr-4">Login</a>
+                </div>
+                <div>
+                    <a href="register.html" data-toggle="click" class="btn btn-primary dropdown-toggle sign-up-btn">Sign up</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <article>
+        <div>
+            <center><img src="img/a.jpg" alt="width 100%"></center>
+        </div>
+        <div>
+            <center><h1><strong>Salmon Teriyaki</strong></h1></center>
+        </div>
+        <div class="teks-for-deskrpisi">
+            <h5><strong>Cara Memasak Resep Ikan Salmon Teriyaki </strong></h5><br />
+            <p>
+                lagi -lagi ikan salmon yang memiliki nilai gizi yang besar dan kali ini kita akan mengolahnya menjadi masakan yang sangat lezat. pada kesempatan kali ini ikan salmon tersebut akan kita masak dengan saus teriyaki, jadi bagi anda yang suka masakan ala jepang bisa mencoba ini di rumah, atau bahkan yang belom pernah makan masakan khas jepang saus teriyaki ini sangat dianjurkan untuk mencobanya.
+                Saus teriyaki sudah sangat terkenal dipakai dibanyak jenis masakan, pasti tahu kan restoran yang menyediakan masakan ala jepang yang telah tersebar di Indonesia yaitu hoka hoka bento? di sana pun juga menyediakan masakan khas jepang dengan saus teriyaki dengan olahan daging ayam dan sapi. namun sekarang kita akan berimprovisasi dengan mengolah ikan salmon yang kaya gizi dengan bumbu teriyaki, pastinya tidak sabarkan untuk praktek, ayo kita lihat apa saja bahan yang perlu dipersiapakan dan bagaimana cara memasak salmon teriyaki ini.
+            </p><br />
+            <h5><strong>Bahan resep ikan salmon bumbu saus teriyaki spesial</strong></h5><br />
+            <p>bahan bahan masakan salmon saos teriyaki :</p><br />
+                <p>- Salmon fillet 500 gram</p>
+                <p>- Teriyaki marinade Kikkoman</p>
+                <p>- Bawang putih bubuk 1 sendok makan</p>
+                <p>- Kecap asin 2 sendok makan</p>
+                <p>- Gula merah 3 sendok makan</p>
+                <p>- Jahe 2 cm, haluskan</p>
+                <p>- Minyak goreng</p>
+                <p>- Air 200 mL</p><br/>
+            <h5><strong>Cara membuat salmon teriyaki:</strong></h5><br/>
+            <p>1. Siapkan mangkuk untuk membuat saus bumbu. Masukkan saus teriyaki, kecap manis, jeruk nipis, gula, dan minyak sayur.  </p>
+            <p>2. Aduk semua bahan hingga merata.</p>
+            <p>3. Lumuri ikan salmon yang sudah disiapkan dengan saus bumbu. Pastikan semua bagian terendam dengan saus.  </p>
+            <p>4. Diamkan selama 30 menit di dalam lemari pendingin. </p>
+            <p>5. Panaskan wajan anti lengket dan panggang ikan salmon yang sudah dilumuri. Masak hingga semua bagian matang. </p>
+            <p>6. Angkat salmon yang sudah matang dan pindahkan ke wadah baru. </p>
+            <p>7. Panaskan saus bumbu yang masih tersisa ke dalam wajan dan siram ke atas salmon. </p>
+            <p>8. Salmon teriyaki siap disantap. </p><br/>
+            <p>
+                Mudah sekali, kan? Untuk melengkapi gizi seimbang, ada baiknya kamu juga membuat sayur seperti brokoli atau tumisan lainnya.</br>
+                Selamat mencoba resep masakan di atas!
+            </p>
+            <html id="abc" name="name1">
+            <head id="abc" name="name2">
+            <script type="text/javascript" id="abc">
+                function kirim() {
+                    var a=document.getElementById("abc").innerHTML;
+                    var b=document.getElementById("teks").value;
+                    var c=document.getElementById("kepala").value;
+                    document.write(a + "<br />" + "<br />");
+                    document.write(b + "<br />");
+                    document.write(c);
+                }
+            </script>
+            </head>
+            <hr style="border: 1px dashed black;"></hr>
+            <hr></hr>
+            <h1>Komentar</h1><br /><br>
+            Nama Anda :</br>
+            <input type=text name="text" id="teks" size="35"><br /><br> 
+            Komentar :</br>
+            <textarea rows="12" name="b" id="kepala" cols="35" wrap="virtual"></textarea><br /><br>
+            <input type="button" onclick="kirim()" value="Komentar" />
+            <input name="Clear" type="reset" value="Batal" />
+            </form><br />
+            <hr style="border: 1px dashed black;"></hr>
+            <hr></hr>
+
+        </div>
+
+
+    </article>
+
+                                      
+
+
+    <!-- Feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+
+
+</body>
+</html>
