@@ -7,9 +7,14 @@ const views = require('../controller/viewsController');
 const recipeRouter = express.Router();
 
 /* ROUTES */
+recipeRouter.get('/',
+async(req,res) => {
+    res.render('recipes/all-recipes');
+}
+)
 recipeRouter.get('/:id/edit', controller.getOne, views.showEditForm, views.show404);
 
-recipeRouter.get('/new', views.showAddForm);
+recipeRouter.get('/recipes', views.showRecipes);
 
 recipeRouter.route('/:id')
     .get(controller.getOne, views.showOne, views.show404)
