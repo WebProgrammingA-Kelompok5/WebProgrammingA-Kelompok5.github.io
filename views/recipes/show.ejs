@@ -1,0 +1,60 @@
+<% include ../partials/header %>
+<body>
+<% include ../partials/navbar %>
+<% include ../partials/alerts %>
+
+
+<div class="container">
+  <div class="col-sm-12 main-col">
+    <h1 class="text-center"><%= recipe.name %></h1>
+
+    <img src="/recipes/images/<%= recipe.imageId %>" class="img-fluid">
+
+    <div id="recipe-content">
+      <h2>Ingredients</h2>
+      <p class="broken-at-newline"><%= recipe.ingredients %></p>
+      <h2>How to make</h2>
+      <p class="broken-at-newline"><%= recipe.description %></p>
+  
+      <p class="text-right">
+        <em>Submitted By <%= recipe.author.username %></em>
+      </p>
+    </div>
+
+    <% if (currentUser && recipe.author.id.equals(currentUser._id)) { %>
+      <div id="edit-section">
+        <a class="btn btn-warning" href="/recipes/<%= recipe._id %>/edit">Edit Recipe</a>
+        <form id="dlt-recipe-form" class="delete-form" action="/recipes/<%= recipe._id %>?_method=DELETE" method="POST">
+          <button class="btn btn-danger">Delete Recipe</button>
+        </form>
+      </div>
+    <% } %>
+
+    <div id="comment-section">
+      <a class="btn btn-outline-success" href="/recipes/<%= recipe._id %>/comments/new">Add New Comment</a>
+
+      <% recipe.comments.forEach(function(comment) { %>
+        <div class="row">
+          <div class="col-md-12">
+            <strong><%= comment.author.username %></strong>
+            <span class="pull-right">10 days ago</span>
+            <p>
+              <%= comment.text %>
+            </p>
+            <% if (currentUser && comment.author.id.equals(currentUser._id)) { %>
+              <a class="btn btn-outline-warning"
+                href="/recipes/<%= recipe._id %>/comments/<%= comment._id %>/edit">
+                Edit Comment
+              </a>
+              <form class="delete-form" action="/recipes/<%= recipe._id %>/comments/<%= comment._id %>?_method=DELETE" method="POST">
+                <button class="btn btn-outline-danger">Delete Comment</button>
+              </form>
+            <% } %>
+          </div>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</div>
+
+<% include ../partials/footer %>

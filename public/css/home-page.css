@@ -1,0 +1,57 @@
+.home {
+  background: url("../img/homepage/brooke-lark-385507-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #de3412;
+  border-color: #de3412;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #a0250c;
+  border-color: #861f0b;
+}
+
+.btn-link {
+  font-size: 1.25em;
+}
+
+.btn-link:hover {
+  color: #101811;
+}
+
+/* to place content in the middle of the screen vertically */
+#content {
+  position: relative;
+  top: 40%;
+  transform: translateY(-60%);
+}
+
+.centered-container {
+  margin: 20px auto;
+  height: 100vh;
+  text-align: center;
+  width: 50%;
+}
+
+#home-page-slogan {
+  font-size: 1.15rem;
+}
+
+hr {
+  max-width: 310px;
+  border-top: 1px solid #8c8b8b;
+  border-bottom: 1px solid #ffffff;
+}
+
+#post-recipe-btn {
+  margin: 5px auto;
+}
+
+#view-recipes-btn {
+  margin: 5px auto;
+}

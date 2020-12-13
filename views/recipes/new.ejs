@@ -1,0 +1,47 @@
+<% include ../partials/header %>
+<body>
+<% include ../partials/navbar %>
+<% include ../partials/alerts %>
+
+<div class="container">
+  <div class="col-sm-12 main-col">
+    <h1 class="text-center">Post a New Recipe</h1>
+    <form action="/recipes" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="name">Recipe name</label>
+        <input class="form-control" type="text" name="name" id="name">
+      </div>
+      <div class="input-container">
+        <input type="file" accept="image/*" id="real-input" name="image">
+        <button type="button" id="browse-btn" class="btn btn-info">
+          Browse Files
+        </button>
+        <span class="file-info">Upload an image</span>
+      </div>
+      <div id="croppie-area"></div>
+      <input id="cropped-img" name="croppedImg64" type="hidden">
+      <div class="edit-img-toolbar">
+        <button type="button" class="crop-btn btn btn-info">Crop</button>
+        <button type="button" class="rotate-btn btn btn-outline-info" data-deg="-90">Rotate Right</button>
+        <button type="button" class="reset-btn btn btn-info">Reset</button>
+      </div>
+      <div class="form-group">
+        <label for="ingredients">Ingredients</label>
+        <textarea class="form-control" id="ingredients" name="ingredients"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="description">How to make</label>
+        <textarea class="form-control" id="description" name="description"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary btn-block">Submit</button>
+      </div>
+    </form>
+
+    <a href="/recipes">Go Back</a>
+  </div>
+</div>
+
+<script src="/js/croppie.js"></script>
+<script type="text/javascript" src="/js/uploadImage.js"></script>
+<% include ../partials/footer %>
