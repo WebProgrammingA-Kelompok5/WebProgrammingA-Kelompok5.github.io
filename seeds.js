@@ -45,8 +45,8 @@ function seedDb() {
           // create a comment
           Comment.create(
             {
-              text: "This is a great recipe, but I've added way more sugar cause I like it sweet!",
-              author: "Uliana"
+              text: " ",
+              author: " "
             }, function(err, comment) {
               if (err) {
                 console.log(err);
