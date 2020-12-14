@@ -1,5 +1,5 @@
 {
-  "name": "murzilla",
+  "name": "recette!",
   "version": "1.0.0",
   "description": "my recipe sharing app",
   "main": "app.js",
@@ -8,11 +8,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://programaka@bitbucket.org/programaka/murzilla.git"
+    "url": " "
   },
-  "author": "Daria Kiritseva",
+  "author": "Kelompok 5",
   "license": "ISC",
-  "homepage": "https://bitbucket.org/programaka/murzilla#readme",
+  "homepage": " ",
   "dependencies": {
     "body-parser": "^1.18.3",
     "connect-flash": "^0.1.1",
