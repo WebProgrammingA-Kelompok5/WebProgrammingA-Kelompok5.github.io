@@ -7,7 +7,7 @@
 .btn-primary {
   color: #fff;
   background-color: #de3412;
-  border-color: #de3412;
+  border-color: #ffffff;
 }
 
 .btn-primary:hover {
@@ -22,6 +22,8 @@
 
 .btn-link:hover {
   color: #101811;
+  background-color: #ffffff;
+  border-color: #241d1c;
 }
 
 /* to place content in the middle of the screen vertically */

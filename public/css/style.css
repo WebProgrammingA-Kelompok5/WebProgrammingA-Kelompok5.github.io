@@ -1,6 +1,7 @@
 .jumbotron {
-  background-color: #050607;
-  color: white;
+  background: url("../img/homepage/brooke-lark-385507-unsplash.jpg");
+  background-size: cover;
+  background-position:top;
 }
 
 #new-form {
