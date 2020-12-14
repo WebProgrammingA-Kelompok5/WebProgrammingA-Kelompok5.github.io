@@ -4,7 +4,10 @@
   "description": "my recipe sharing app",
   "main": "app.js",
   "scripts": {
-    "devStart": "nodemon app.js"
+    "devStart": "nodemon app.js",
+    "dev": "nodemon",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -29,5 +32,6 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.6"
+    
   }
 }
